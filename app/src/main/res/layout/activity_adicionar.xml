@@ -1,9 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Adicionar">
+    tools:context=".Adicionar"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/edt_Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Completo">
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero">
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email">
+    </EditText>
+    <EditText
+        android:id="@+id/edt_dataNasc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data Nascimento">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexo:"
+        android:textSize="18sp">
+    </TextView>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rbF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="F">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rbO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outro">
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_AdicinarContato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar">
+    </Button>
+    <Button
+        android:id="@+id/btn_CancelarAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar">
+    </Button>
+</LinearLayout>
